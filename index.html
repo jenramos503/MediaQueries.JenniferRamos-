@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Car Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Electric Cars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="card filter-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Filters</h5>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Price Range</label>
+                            <input type="range" class="form-range" min="20000" max="150000" step="1000" value="80000">
+                            <div class="d-flex justify-content-between">
+                                <span>$20k</span>
+                                <span>$150k</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Brand</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="teslaCheck">
+                                <label class="form-check-label" for="teslaCheck">Tesla</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="bmwCheck">
+                                <label class="form-check-label" for="bmwCheck">Gac</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="audiCheck">
+                                <label class="form-check-label" for="audiCheck">Changan</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="audiCheck">
+                                <label class="form-check-label" for="audiCheck">Damani</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Products -->
+            <div class="col-lg-9">
+                <h1 class="mb-4">Electric Vehicles</h1>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Product 1 -->
+                    <div class="col">
+                        <div class="card product-card h-100">
+                            <div class="product-image-container">
+                                <img src="./assets/img/Tesla_Model_S_2016-01@2x.jpg" alt="Tesla Model S" class="product-image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tesla Model S</h5>
+                                <p class="card-text text-success fw-bold">$79,990</p>
+                                <button class="btn btn-primary w-100">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="col">
+                        <div class="card product-card h-100">
+                            <div class="product-image-container">
+                                <img src="./assets/img/Changan.jpg" alt="Changan" class="product-image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Changan</h5>
+                                <p class="card-text text-success fw-bold">$84,195</p>
+                                <button class="btn btn-primary w-100">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="col">
+                        <div class="card product-card h-100">
+                            <div class="product-image-container">
+                                <img src="./assets/img/damani.webp" alt="Damani" class="product-image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Damani</h5>
+                                <p class="card-text text-success fw-bold">$65,900</p>
+                                <button class="btn btn-primary w-100">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="col">
+                        <div class="card product-card h-100">
+                            <div class="product-image-container">
+                                <img src="./assets/img/gac-aion-es-launched-in-uae-price-variants-specs-2.jpg" alt="gac" class="product-image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Gac</h5>
+                                <p class="card-text text-success fw-bold">$27,400</p>
+                                <button class="btn btn-primary w-100">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-3 mt-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Electric Car Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
